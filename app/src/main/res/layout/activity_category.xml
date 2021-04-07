@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dhanuka.morningparcel.activity.CategoryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+        android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:translationZ="5dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_search_black_24dp"/>
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/white"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/msgheader"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:text="Hello i am text"
+android:visibility="gone"
+
+            android:gravity="center"
+            android:maxLines="1"
+            android:drawableRight="@drawable/ic_infotag"
+            android:textColor="@color/black2"
+
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_height="50dp"/>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tlSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            app:tl_textSelectColor="@android:color/black"
+            app:tl_textUnselectColor="@android:color/black"
+            app:tl_indicator_color="@color/colorAccent"
+            app:tl_indicator_gravity="BOTTOM"
+            app:tl_indicator_height="2dp"
+            app:tl_textAllCaps="false"
+            app:tl_textBold="SELECT"
+            app:tl_textsize="18sp"/>
+
+<!--
+        <androidx.viewpager.widget.ViewPager
+-->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpProducts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

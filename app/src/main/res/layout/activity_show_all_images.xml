@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context="com.dhanuka.morningparcel.activity.Showallimages">
+
+    <RelativeLayout
+        android:id="@+id/topL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/backbtnicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:onClick="makeBackClick"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbtnicon"
+            android:padding="7dp"
+            android:text="Images"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/topL"
+    android:layout_height="match_parent">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_marginTop="10dp"
+         android:layout_above="@+id/mView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_screen_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Show Images"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/work_order_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_photo_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="10 Photos"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/work_order_hint"
+                android:visibility="gone" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:layout_above="@+id/imagesRV"
+                android:background="@color/work_order_theme_color" />
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:layout_marginTop="5dp"
+
+    >
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/layout_client_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--<HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">-->
+
+
+    </com.github.chrisbanes.photoview.PhotoView>
+
+    <!-- <com.github.barteksc.pdfviewer.PDFView
+          android:id="@+id/ViewPdf"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+
+          />-->
+    <RelativeLayout
+        android:id="@+id/pdfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnn"
+            android:gravity="center"
+            android:padding="10dp"
+             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/btnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAccent"
+            android:minWidth="150dp"
+            android:onClick="viewPdfFile"
+            android:text="View PDF"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <WebView
+
+        android:id="@+id/webview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:id="@+id/mView"
+        android:layout_above="@+id/imagesRV"
+        android:background="@color/work_order_theme_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesRV"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layoutAnimation="@anim/layout_animation"
+        android:orientation="horizontal" />
+
+</RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/noImgL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topL"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No Images Found, \ntry again later."
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_margin="10dp"
+            android:src="@drawable/no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:gravity="end"
+           />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

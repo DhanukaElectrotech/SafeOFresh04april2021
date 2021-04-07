@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/p_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:orderInCategory="100"
+        android:title="Dashboard"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/p__refresh"
+        android:icon="@drawable/w_refresh"
+        android:orderInCategory="100"
+
+        android:title="Refresh"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/p_sort"
+        android:icon="@drawable/sort_it"
+        android:orderInCategory="100"
+        android:title="Sort"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/p_filter"
+        android:icon="@drawable/ic_vertical"
+        android:orderInCategory="100"
+        android:title="Top"
+        app:showAsAction="never" />
+
+</menu>

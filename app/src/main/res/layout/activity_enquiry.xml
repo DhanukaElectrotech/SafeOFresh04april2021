@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.dhanuka.morningparcel.activity.EnquiryActivity">
+
+    <RelativeLayout
+        android:id="@+id/topL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/backbtnicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:onClick="makeBackClick"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbtnicon"
+            android:padding="7dp"
+            android:text="Enquiry"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:minHeight="44dp"
+                android:padding="@dimen/margin5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/margin5dp"
+                android:text="Phone No." />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="Phone No."
+                android:inputType="phone"
+                android:minHeight="44dp"
+                android:padding="@dimen/margin5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/margin5dp"
+                android:text="Subject" />
+
+            <Spinner
+                android:id="@+id/spinnerSubject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:minHeight="44dp"
+                android:padding="@dimen/margin5dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/margin5dp"
+                android:text="Quantity" />
+
+            <EditText
+                android:id="@+id/edtQty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="Quantity"
+                android:inputType="phone"
+                android:minHeight="44dp"
+                android:maxLength="10"
+                android:padding="@dimen/margin5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/margin5dp"
+                android:text="Message(Optional)" />
+
+            <EditText
+                android:id="@+id/edtMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="Message"
+                 android:lines="4"
+                android:minHeight="80dp"
+                android:gravity="start"
+                android:minLines="4"
+                android:maxLines="4"
+
+                android:padding="@dimen/margin5dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_call_back"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:onClick="makeEnquiry"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sortpopid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:minWidth="300dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Canelsort"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/closeHeader"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/vehicle_header_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingTop="1.0dip"
+                    android:paddingEnd="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/closeHeader"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:padding="13dp"
+                android:src="@drawable/ic_light"
+                android:text="x"
+                android:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/llBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edtBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageScan"
+            android:background="@drawable/payment_border"
+            android:hint="Barcode"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/imageScan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/barcode_scan" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin5dp"
+        android:text="Attach Images(Optional)"
+
+        android:textColor="@color/black2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/payment_border"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImages"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/imagepick" />
+
+
+        <ImageView
+            android:id="@+id/imagepick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/wo_camera" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:text="Ready"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+

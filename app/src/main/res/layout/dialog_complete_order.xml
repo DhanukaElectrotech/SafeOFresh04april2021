@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sortpopid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:minWidth="300dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Canelsort"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/closeHeader"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/vehicle_header_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+
+                    android:paddingTop="1.0dip"
+                    android:paddingEnd="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:text="Deliver Order"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/closeHeader"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:padding="13dp"
+                android:src="@drawable/ic_light"
+                android:text="x"
+                android:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Capture the Sign and the parcel photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/payment_border"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    android:id="@+id/signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:background="@color/colorAccent"
+                    android:enabled="false"
+                    android:text="Clear"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/photoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/payment_border"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imgPhoto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:src="@android:drawable/ic_menu_camera" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/rvImagescomp"/>
+
+
+                      <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5dp"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="center"
+                        android:text="Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/payment_border"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/payment_border"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imgSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@android:drawable/ic_menu_gallery" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5dp"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="center"
+                        android:text="Signature" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/qtyLayout"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+
+                >
+
+                <EditText
+                    android:id="@+id/edtNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/payment_border"
+                    android:gravity="start"
+                    android:hint="Comment(Optional)"
+                    android:maxLines="3"
+                    android:minHeight="44dp"
+                    android:minLines="3"
+                    android:padding="10dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:text="Complete"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

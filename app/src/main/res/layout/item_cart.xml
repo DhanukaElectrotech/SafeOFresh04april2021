@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dhanuka.morningparcel.customViews.CartView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="30dp"
+                android:padding="5dp"
+                android:tint="@color/red"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/delete_icon" />
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                 android:src="@drawable/no_image" />
+            <TextView
+                android:id="@+id/tvOff"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="-50dp"
+                android:background="@drawable/red_circle"
+                android:text=""
+                android:gravity="center"
+                android:layout_toStartOf="@+id/ivProduct"
+                android:textAllCaps="true"
+
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/ivDelete"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/ivProduct"
+                android:text="Product Name"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivDelete"
+                android:layout_below="@+id/tvName"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:text="OLD PRICE"
+                android:textSize="12sp"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/tvsale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="12sp"
+                android:layout_toLeftOf="@+id/ivDelete"
+                android:layout_below="@+id/tvName"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:text="OLD PRICE"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/tvName"
+                android:layout_alignLeft="@+id/tvName"
+                android:gravity="center"
+                android:text="Save hello"
+                android:textAllCaps="true"
+
+                android:textColor="@color/red_star"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnReduce"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tvPrice"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/tvQty"
+                android:background="#739bd1"
+                android:text="-"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPrice"
+                android:layout_alignTop="@+id/btnReduce"
+                android:layout_alignBottom="@+id/btnReduce"
+                android:layout_toLeftOf="@+id/btnAdd"
+                android:background="#efefef"
+                android:maxLength="6"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="98"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tvPrice"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#739bd1"
+                android:text="+"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</com.dhanuka.morningparcel.customViews.CartView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+c
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Refer &amp; Earn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/gifts"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/black1"
+        android:text="Refer Your Friends"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black1"
+        android:text="AND GET 100 POINTS"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@color/ef_grey"
+        android:text="Invite your freinds to earn money use\n   your refer code and you both earn money\n ."
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+
+        android:textSize="20sp"
+        android:textColor="#e1ad01"
+android:layout_marginBottom="10dp"
+        android:text="Your Refer Code"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+
+        android:textSize="20sp"
+        android:textColor="@color/black1"
+        android:background="@drawable/white_dottedback"
+
+        android:text="SDGS05Y"
+        android:textAllCaps="true"
+
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/sharecode1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fshsre"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black1"
+        android:text="10 level referral income"
+
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/sharecode"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#e1ad01"
+
+        android:text="Share Your Code"
+        android:layout_marginTop="40dp"
+
+
+        android:gravity="center"
+        android:layout_height="50dp"/>
+
+
+</LinearLayout>

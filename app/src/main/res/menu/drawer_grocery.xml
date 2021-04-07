@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/home_nav"
+             android:icon="@drawable/home"
+            android:title="Home"></item>
+
+        <item
+            android:id="@+id/profileid"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"></item>
+        <item
+            android:id="@+id/history_nav"
+            android:icon="@drawable/orders"
+             android:title="Order History"></item>
+        <item
+            android:id="@+id/publicationnav"
+            android:visible="false"
+            android:icon="@drawable/ic_baseline_send_24"
+            android:title="Publication"></item>
+
+        <item
+            android:id="@+id/ac_history"
+            android:icon="@drawable/orders"
+             android:title="Account History"></item>
+        <item
+            android:id="@+id/htrwrd"
+            android:icon="@drawable/ic_baseline_monetization_on_24"
+            android:title="Reward Points"></item>
+        <item
+            android:id="@+id/rfearn"
+            android:icon="@drawable/ic_share"
+            android:title="Refer &amp; earn"></item>
+        <item
+            android:id="@+id/history_wallet"
+            android:visible="false"
+            android:icon="@drawable/wallet"
+             android:title="Wallet(0.0)"></item>
+
+
+     <item
+            android:id="@+id/pending_nav"
+            android:icon="@drawable/ic_stops"
+             android:title="Pending Order Items"></item>
+
+        <item
+            android:id="@+id/changepas"
+            android:icon="@drawable/ic_lock"
+            android:title="Change Password"></item>
+
+
+
+        <item
+            android:id="@+id/reachUs"
+            android:checked="false"
+            android:iconTint="@color/black"
+
+            android:icon="@drawable/reach_us_light"
+            android:title="Reach Us"></item>
+
+        <item
+            android:id="@+id/refund"
+            android:checked="false"
+            android:iconTint="@color/black"
+
+            android:icon="@drawable/rupee"
+            android:title="Refund and Cancellations"></item>
+
+        <item
+            android:id="@+id/contactus"
+            android:checked="false"
+            android:iconTint="@color/black"
+
+            android:icon="@drawable/mobile_et"
+            android:title="Contact us"></item>
+    <item
+            android:id="@+id/feedback"
+            android:checked="false"
+        android:visible="false"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feedback"></item>
+    <item
+            android:id="@+id/help"
+            android:checked="false"
+        android:visible="false"
+            android:icon="@drawable/help"
+            android:title="Help"></item>
+    <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:icon="@drawable/about_app"
+            android:title="About This App"></item>
+    <item
+            android:id="@+id/legal"
+            android:checked="false"
+            android:icon="@drawable/legal"
+            android:title="Legal"></item>
+    <item
+            android:id="@+id/terms"
+            android:checked="false"
+        android:visible="false"
+            android:icon="@drawable/terms_services"
+            android:title="Terms Of Service"></item>
+    <item
+            android:id="@+id/policy"
+            android:checked="false"
+            android:icon="@drawable/privacy_policy"
+            android:title="Privacy Policy"></item>
+    <item
+            android:id="@+id/hts"
+            android:checked="false"
+            android:icon="@drawable/how_to_use"
+            android:title="How To Shop"></item>
+    <item
+            android:id="@+id/msn"
+            android:checked="false"
+            android:icon="@drawable/our_mission"
+            android:title="Our Mission"></item>
+        <!--     <item
+                 android:id="@+id/aboutUs"
+                 android:checked="false"
+                 android:icon="@drawable/about_light"
+                 android:title="About Us"></item>
+     -->
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/logout_light"
+            android:title="Logout"></item>
+    </group>
+</menu>

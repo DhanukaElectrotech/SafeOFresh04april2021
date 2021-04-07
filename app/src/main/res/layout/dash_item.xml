@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/border_vendor"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin2dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="match_parent"
+                android:id="@+id/cardimg"
+                android:src="@drawable/sales" />
+
+            <TextView
+
+                android:id="@+id/cardname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#3772a8"
+                android:gravity="center"
+                android:text="Sale Reports"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="com.dhanuka.morningparcel.activity.ItemHistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/topL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/backbtnicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:onClick="makeBackClick"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbtnicon"
+            android:padding="7dp"
+            android:text="Item History"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llradiogroup"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rsortgroup"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@id/allstockbtn"
+
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/purchasesort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Purchase"
+
+                android:textColor="@color/black1"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/salesort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Sale"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/allsort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/colorPrimary"
+                android:text="All"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llDropDown"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/margin5dp"
+                    android:layout_marginLeft="@dimen/margin5dp"
+                    android:layout_marginRight="@dimen/margin5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Change Branch"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spinner_branch"
+                        android:layout_width="match_parent"
+                        android:hint=""
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:translationZ="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_search_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:hint="Search"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            -->
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--
+                                <androidx.recyclerview.widget.RecyclerView
+                    -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lvProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null" />
+
+                    <LinearLayout
+                        android:id="@+id/linearContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="No products are available, pull down to refresh."
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+        <!--
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+        -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabsort"
+            android:onClick="fabsortclk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="10dp"
+
+            android:src="@drawable/sort_it" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+
+            android:src="@drawable/filter" />
+    </FrameLayout>
+
+</LinearLayout>

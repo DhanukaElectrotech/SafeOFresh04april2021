@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:minWidth="400dp"
+    android:minHeight="200dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp"
+
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+
+        android:id="@+id/relia"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minWidth="400dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:minWidth="400dp">
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_image" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/ivProduct"
+                android:layout_alignBottom="@id/ivProduct"
+                android:background="@drawable/circle"
+                android:padding="5dp"
+                android:src="@drawable/ic_edit" />
+
+            <RelativeLayout
+                android:id="@+id/nameL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_toRightOf="@+id/ivProduct"
+                android:background="@drawable/bg_spinner_blue_new">
+
+                <TextView
+                    android:id="@+id/tvName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5dp"
+                    android:layout_weight="1"
+                    android:layout_toLeftOf="@+id/editName"
+                    android:background="@color/white"
+                    android:hint="Enter item name"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <EditText
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+android:layout_toLeftOf="@+id/editName"
+                    android:layout_marginLeft="@dimen/margin5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="Enter item name  Enter item name "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/editName"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/border_line"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvOriginalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameL"
+                android:layout_alignLeft="@+id/nameL"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:text="SKU : HSKJKDKJHD"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOriginalPrice"
+                android:layout_alignLeft="@id/nameL">
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Item Update"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="400dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="Sale Price" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="Item Quantity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="400dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="@dimen/margin5dp"
+                android:layout_toLeftOf="@+id/btnAddToCart"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="Enter item price"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:id="@+id/tvQty"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/margin5dp"
+                 android:layout_weight="1"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="Enter item quantity"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="400dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="MRP" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="400dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tvMRP"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="@dimen/margin5dp"
+
+                android:layout_marginBottom="20dp"
+                android:layout_toLeftOf="@+id/btnAddToCart"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:editable="false"
+                android:gravity="center"
+                android:hint="Enter item price"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:id="@+id/edtPrice1"
+
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/margin5dp"
+                 android:layout_weight="1"
+                android:background="@drawable/bg_spinner_blue_new"
+                android:hint="App item price"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

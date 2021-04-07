@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:background="@color/white"
+
+android:layout_height="wrap_content">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Fab_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="80.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginBottom="40.0dip"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/detail"
+            android:tint="@color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal" />
+
+        <RelativeLayout
+            android:id="@+id/outerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="143.0dip"
+                android:layout_marginRight="17dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="4.0"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:weightSum="4.0">
+
+                        <TextView
+                            android:id="@+id/textNormal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="Normal Type"
+                            android:textColor="#ff000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textHybrid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="Hybrid Type"
+                            android:textColor="#ff000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textTerrain"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="Terrain Type"
+                            android:textColor="#ff000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textSatellite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0dip"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="Satellite Type"
+                            android:textColor="#ff000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.0"
+                        android:background="#00ffffff"
+                        android:orientation="vertical"
+                        android:weightSum="4.0">
+
+                        <RadioGroup
+                            android:id="@+id/maptype_overlay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+
+                            android:background="#00ffffff">
+
+                            <RadioButton
+                                android:id="@+id/radio_normal_overlay"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:button="@null"
+
+                                android:checked="true"
+                                android:drawableRight="@android:drawable/btn_radio"
+                                android:drawableTint="@color/colorAccent"
+                                android:shadowColor="@color/colorAccent"
+                                android:text="Normal Type   "
+                                android:textColor="#ff000000"
+                                android:textStyle="bold"
+
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radio_hybrid_overlay"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+
+                                android:button="@null"
+                                android:drawableRight="@android:drawable/btn_radio"
+                                android:drawableTint="@color/colorAccent"
+                                android:shadowColor="#ff90f400"
+                                android:text="Hybrid Type   "
+                                android:textColor="#ff000000"
+
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radio_terrain_overlay"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:button="@null"
+                                android:drawableRight="@android:drawable/btn_radio"
+                                android:drawableTint="@color/colorAccent"
+                                android:shadowColor="#ff90f400"
+                                android:text="Terrain Type   "
+                                android:textColor="#ff000000"
+
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radio_satellite_overlay"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:button="@null"
+                                android:drawableRight="@android:drawable/btn_radio"
+                                android:drawableTint="@color/colorAccent"
+                                android:shadowColor="#ff90f400"
+                                android:text="Satellite Type   "
+                                android:textColor="#ff000000"
+
+                                android:textStyle="bold" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Map Type"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/cancelmapd"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cross"/>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstmapcard"
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/mapdefaultclk"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:background="@drawable/backgroun_corners"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mapfirsttype"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_below="@+id/firstmapcard"
+            android:layout_width="wrap_content"
+            android:text="Default"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+
+            android:textColor="@color/colorPrimary"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+
+
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/mapsatelliteclk"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/satellitemapic"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_below="@+id/firstmapcard"
+            android:layout_width="match_parent"
+            android:text="Satellite"
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+
+
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/mapterrainclk"
+                android:layout_width="match_parent"
+
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mapterrain"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_below="@+id/firstmapcard"
+            android:layout_width="match_parent"
+            android:text="Terrain"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:text="Map Details"
+    android:layout_marginLeft="20dp"
+    android:textStyle="bold"
+    android:textSize="14sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+
+    android:layout_height="wrap_content"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+
+
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/deafultmapdetailclk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backgroun_corners"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:src="@drawable/maptransitic"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_below="@+id/firstmapcard"
+            android:layout_width="wrap_content"
+            android:text="Default"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+
+            android:textColor="@color/colorPrimary"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+
+
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/mapbycyclingclk"
+
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/threedmapic"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_below="@+id/firstmapcard"
+            android:layout_width="match_parent"
+            android:text="Building 3D"
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+
+
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/maptrafficlk"
+                android:layout_width="match_parent"
+
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/trafficic"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_below="@+id/firstmapcard"
+            android:layout_width="match_parent"
+            android:text="Traffic"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

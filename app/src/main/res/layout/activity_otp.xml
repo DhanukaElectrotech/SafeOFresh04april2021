@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center_vertical"
+
+
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/cite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="United States"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/enterll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Enter OTP"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otpll"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="One Time Password Sent to 8376071201"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <com.mukesh.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:cursorVisible="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:inputType="number"
+                android:itemBackground="@color/white"
+                android:textColor="#000000"
+                app:itemCount="4"
+                app:lineColor="#efefef"
+                app:viewType="rectangle" />
+
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:hint=""
+                android:textColorHint="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invalidotptxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="OTP is not match"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.5"
+
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:text="Didn't Recieve OTP through text message?"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resendpass"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/border_status"
+                android:gravity="center"
+
+                android:text="Resend"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="bottom"
+
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/otpcontbtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+
+                android:layout_marginRight="20dp"
+
+                android:background="@color/colorAccent_light"
+
+                android:gravity="center"
+
+                android:text="Verify &amp; Proceed"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <!--        <TextView-->
+        <!--            android:id="@+id/otpbtn"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            android:background="@color/colorAccent_light"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Verify &amp; Proceed"-->
+        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textStyle="bold" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="I AGREE TO THE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="PRIVACY POLICY"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/passwordll"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"
+                app:civ_border_width="@dimen/margin1dp"
+                android:src="@drawable/userview" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Name"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:textColor="@color/black1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+
+                android:orientation="horizontal">
+
+
+                <EditText
+
+                    android:id="@+id/nameid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:hint="Name" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Password"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/passid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/img_show1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_visibility_off_black_24dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_hide1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_visibility_black_24dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Confirm Password"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+                    android:id="@+id/confirmpassid"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/img_show2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_visibility_off_black_24dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_hide2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_visibility_black_24dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+
+                android:layout_marginLeft="20dp"                android:layout_marginTop="3dp"
+                android:weightSum="2">
+
+
+
+                <!--
+                                    <com.google.android.material.textfield.TextInputEditText
+                -->
+
+                <TextView
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:minHeight="50dp"
+                    android:textColor="@color/black"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true"
+                    android:text="Shop Opening Time"
+                    android:textColorHint="@color/black" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="20dp"                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+
+
+
+                <!--
+                                    <com.google.android.material.textfield.TextInputEditText
+                -->
+
+                <EditText
+
+                    android:id="@+id/timeopen"
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_time"
+                    android:gravity="center_vertical"
+
+                    android:drawablePadding="10dp"
+                    android:minHeight="50dp"
+                    android:layout_marginRight="5dp"
+
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true"
+                    android:hint="Select Time" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:text="Shop closing Time"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="20dp"                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+
+                <EditText
+
+                    android:id="@+id/timeclose"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_time"
+                    android:gravity="center_vertical"
+                    android:minHeight="50dp"
+                    android:paddingStart="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Select Time"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="2"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/proceedbtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorAccent_light"
+
+                android:gravity="center"
+                android:text="Get Started"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+
+                android:onClick="onLoginWithOtp"
+                android:text="Log In with otp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

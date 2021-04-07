@@ -1,0 +1,188 @@
+{
+  "project_info": {
+    "project_number": "985084379971",
+    "firebase_url": "https://safeobuddylock.firebaseio.com",
+    "project_id": "safeobuddylock",
+    "storage_bucket": "safeobuddylock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985084379971:android:52ff18731caa21e7eaa5f6",
+        "android_client_info": {
+          "package_name": "com.dhanuka.morningparcel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985084379971:android:135981ae27e08ffdeaa5f6",
+        "android_client_info": {
+          "package_name": "com.dhanuka.safeobuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985084379971-4aqk1lolduc6if9lfrp9s00hjkjs8ne0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhanuka.safeobuddy",
+            "certificate_hash": "e94334e30084f177cfadf93c1aa2e5543c79ff9e"
+          }
+        },
+        {
+          "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985084379971:android:250c65797d6cca43eaa5f6",
+        "android_client_info": {
+          "package_name": "com.dhanuka.morningparcel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985084379971-pktj6n2n9jg54egcrfbcg9g4i7b34nlv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhanuka.morningparcel",
+            "certificate_hash": "e94334e30084f177cfadf93c1aa2e5543c79ff9e"
+          }
+        },
+        {
+          "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985084379971:android:69ad295b8a848ccbeaa5f6",
+        "android_client_info": {
+          "package_name": "com.dhanuka.morningparcelnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985084379971-g7f88b3qsjko38ehelsm9tjr01tciddb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhanuka.morningparcelnew",
+            "certificate_hash": "e94334e30084f177cfadf93c1aa2e5543c79ff9e"
+          }
+        },
+        {
+          "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985084379971:android:06c1dad88940e749eaa5f6",
+        "android_client_info": {
+          "package_name": "com.dhanuka.morningparcel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985084379971-chg5f5s5a9eqbfcjs021o7rvh5872314.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhanuka.morningparcel",
+            "certificate_hash": "e94334e30084f177cfadf93c1aa2e5543c79ff9e"
+          }
+        },
+        {
+          "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985084379971-mid4pd4d7dpiva512hlpu0u5gsenafi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

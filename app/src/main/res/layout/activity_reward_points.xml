@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bacgroundpoint"
+
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/bckbtn22"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:onClick="onBackClick"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:src="@drawable/back_arrow"
+            android:tint="@color/white" />
+        <TextView
+            android:id="@+id/totalrewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/recurringrupee"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="Reward Points Available"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="Each point is eqaul to Rs.1,Reedem before they expire"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rewardcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

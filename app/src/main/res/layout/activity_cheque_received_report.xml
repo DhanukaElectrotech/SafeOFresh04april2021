@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+>
+<!--
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_actionbar"
+        style="@style/ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/image_filtter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/filtericon"
+            />
+
+    </android.support.v7.widget.Toolbar>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_today"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/work_order_theme_color"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textColor="@color/white" />
+                    <ImageView
+                        android:id="@+id/iv_today_tringle"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/triangle_blue" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/work_order_theme_dark_color"
+                        android:gravity="center"
+                        android:text="Yesterday"
+                        android:id="@+id/tv_tommorow"
+                        android:textColor="@color/white" />
+                    <ImageView
+                        android:id="@+id/iv_tomorrow_tringle"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/triangle_blue"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/work_order_cyan_color"
+                        android:gravity="center"
+                        android:text="20 OPEN"
+                        android:id="@+id/tv_open"
+                        android:textColor="@color/white" />
+                    <ImageView
+                        android:id="@+id/iv_open_tringle"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/triangle_cyan" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/work_order_cyan_dark_color"
+                        android:gravity="center"
+                        android:text="10 CLOSED"
+                        android:id="@+id/tv_closed"
+                        android:textColor="@color/white" />
+                    <ImageView
+                        android:id="@+id/iv_closed_tringle"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/triangle_cyan"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_search"
+        app:met_floatingLabel="highlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom"
+        android:maxLength="200"
+        android:hint="Search here"
+        android:paddingBottom="-3dp"
+        android:singleLine="true"
+        android:textColor="@color/work_order_hint"></com.rengwuxian.materialedittext.MaterialEditText>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_news_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none" />
+        <LinearLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null"
+                android:src="@drawable/gray_vehicle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="No Work Order Found."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#999999"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

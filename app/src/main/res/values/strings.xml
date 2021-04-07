@@ -1,0 +1,475 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Safe\'O\'Fresh</string>
+    <string-array name="arr_qty_type">
+        <item>Box</item>
+        <item>Pieces</item>
+        <item>KG</item>
+
+    </string-array>
+    <string-array name="arr_filter">
+        <item>All</item>
+        <item>Scanned Items</item>
+        <item>Unmatched Items</item>
+        <item>Pending Scan Items</item>
+        <item>Extra Scan Items</item>
+    </string-array>
+
+
+    <string-array name="tax_type">
+        <item>Without Tax</item>
+        <item>With Tax</item>
+    </string-array>
+    <string name="all_item_api">http://mmthinkbiz.com/MobileService.aspx?method=All_Item_Master_web</string>
+    <string name="all_cust_api">http://mmthinkbiz.com/Mobileservice.aspx?method=AllGetCustomerAPI_Web</string>
+    <string name="URL_UPLOAD_GRDETAIL">http://mmthinkbiz.com/MobileService.aspx/getds?method=CreateGR_Detail</string>
+
+    <string name="URL_UPLOAD_GRMASTER">http://mmthinkbiz.com/MobileService.aspx/getds?method=CreateGR_Master</string>
+    <string name="URL_GET_BILLABLE_CLIENT_NAME">http://mmthinkbiz.com/MobileService.aspx/getds?method=getbillableclientname</string>
+    <string name="URL_BASE_URL">https://vehicletrack.membocool.com/Safeobuddy.aspx?method=apss</string>
+    <string name="URL_ALL_VEHICLE_LOCATION">method=allvehiclelocation</string>
+    <string name="URL_GET_BRANCH">method=GetBranchList</string>
+    <string name="URL_OPEN_GATE">method=StartStopVehicleOpenGate</string>
+    <string name="URL_GET_CLIENT">method=getbillableclientname</string>
+    <string name="URL_LOGIN_ENC">method=LoginValidation1</string>
+    <string name="URL_OTP_LOGIN">method=otplogin</string>
+    <string name="CREATE_ORDER_DETAIL">method=CreateOrderDetail</string>
+    <string name="CREATE_MASTER_ORDER">method=CreateOrderMaster</string>
+    <string name="CREATE_MASTER_CARTITEMS">method=CreateCartItems</string>
+
+    <string name="google_maps_key1">AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I</string>
+    <string name="URL_NOTIFICATION_REGISTER">http://mmthinkbiz.com/MobileService.aspx?method=GCMRegister</string>
+    <string name="URL_EMPLOYEE_COORDINATES">http://mmthinkbiz.com/MobileService.aspx/NewRegistration?method=Getemployeecoordinates</string>
+    <string name="UPDATE_ORDER_STATUS">method=updateorderstatus_new</string>
+    <string name="CREATE_ORDER_ITEMS">method=CreateItems</string>
+    <string name="GET_MODE">method=Getmode</string>
+    <string name="GET_TIME_SLOT_NEW">method=GetDeliveryTimeSlot</string>
+    <string name="GET_DELIVERY_DATE">method=GetDeliverydate</string>
+    <string name="payment_credit_card_number_hint">Card Number</string>
+    <string name="payment_expiration_hint">MM/YY</string>
+    <string name="payment_credit_card_cvc_hint">CVC</string>
+    <string name="payment_intent_status">PaymentIntent status: %s</string>
+    <string name="setup_intent_status">SetupIntent status: %s</string>
+
+    <string name="create_payment_method_header">Create Payment Method</string>
+    <string name="create_source_header">Create Source</string>
+    <string name="paymentMethods">Payment Methods</string>
+    <string name="create_payment_method">Create Payment Method</string>
+    <string name="creating_payment_intent">Creating PaymentIntent&#8230;</string>
+
+    <string name="creating_setup_intent">Creating SetupIntent&#8230;</string>
+
+    <string name="URL_UPDATE_EMPLOYEE_GEOFENCE">http://mmthinkbiz.com/MobileService.aspx/getds?method=UpdateEmoloyeeGeofence</string>
+    <string name="GET_ORDER_DETAIL">method=GetOrderDetail</string>
+
+    <string name="GET_ORDER_DETAIL1">method=GetOrderDetail_New_2</string>
+    <string name="GET_ORDER_DETAIL_MP">method=GetOrderDetail_New</string>
+    <string name="GET_ORDER_DETAIL_GR">method=GetGRDetail</string>
+    <string name="GET_REWARD_DETAIL">method=RewardTransactionDetail</string>
+
+    <string name="GET_ITEM_HISTORY">method=Itemorderhistory</string>
+
+    <string name="ORDER_CREDIT">method=OrderCreditSummary</string>
+
+    <string name="Meeting_REPORT">method=VisitMeetingDetail</string>
+
+
+    <string name="CREDIT_RETURN">method=UpdateCreditReturn</string>
+
+
+    <string name="GET_WALLET_DETAIL">method=WalletTransactionDetail</string>
+
+    <string name="GET_TAT_REPORT">method=OrderTatReport</string>
+
+    <string name="GET_ORDER_DETAIL_GR_NEW">method=GetGRDetail_New</string>
+
+    <string name="GET_ORDER_DETAIL_SKART">method=GetOrderDetail_New</string>
+
+    <string name="URL_CUSTOMER_CREDIT">method=CustomerCreditSummary</string>
+    <string name="GET_ORDER_BY_ITEM">method=Orderhistorybyitem</string>
+    <string name="GET_SUPPLIERS_BY_ITEM">method=itemsupplierchk</string>
+    <string name="GET_DELIVERY_BOYS">method=GetDeliveryBoyList</string>
+
+    <string name="GET_STORE_ORDER_DETAIL">mmethod=GetStoreOrderDetail</string>
+    <string name="URL_DASHBOARD">method=GetTruckDashboards</string>
+    <string name="URL_GET_CATEGORY_CODE">method=GetCatCode</string>
+
+    <string name="URL_UPDATE_ORDER_STATUS">method=updateorderstatus</string>
+    <string name="URL_UPLOAD_COMPLAINT_TABLE">method=createcomplaint</string>
+    <string name="TEST_URL_ASSIGN_RATING">method=assignrating</string>
+    <string name="TEST_URL_ASSIGN_ORDER_RATING">method=groceryrating</string>
+    <string name="URL_UPLOAD_DOC">method=uploaddocumentdetail</string>
+    <string name="ORDER_ITEM_DETAIL">method=orderitemdetail</string>
+    <string name="WEEKLY_REPORTS">method=weeksalereport</string>
+
+    <string name="BRANCH_REPORTS">method=GetBranchDateWiseSaleReport</string>
+    <string name="STORE_WISE_REPORTS">method=StoreWiseCurrentStock</string>
+    <string name="ALL_BRANCHES">http://mmthinkbiz.com/MobileService.aspx?method=MainSafeoKartStore_Web</string>
+
+    <string name="ITEM_REPORTS">method=SalesAnalysisItem</string>
+    <string name="GROUP_REPORTS">method=SalesAnalysisGroup</string>
+    <string name="URL_UPDATE_ATTENDANCE_DETAIL">method=uploadattendancechange</string>
+    <string name="URL_GET_ATTENDANCE_DETAIL_CHANGE">method=getattendancechangedetail</string>
+    <string name="URL_GIVE_ATTENDANCE">method=MobileAttendanceNew</string>
+    <string name="URL_GET_ROASTER_SUMMARY">method=GetRoasterSummary</string>
+    <string name="spinner_title">Select WorkType</string>
+    <string name="RosterVehicleAssign">method=UpdateRoasterVehicleAssign</string>
+    <string name="URL_UPDATE_VEHICLE_ASSIGN">method=UpdateRoasterVehicleAssign</string>
+    <string name="GetAssignVehicle">method=GetAssignVehicle</string>
+    <string name="URL_GET_CHALLAN_DETAIL">method=Getchallandetail</string>
+    <string name="URL_Upload_Cheque_Collect">method=uploadchequecollect</string>
+    <string name="URL_WORK_ORDER_STATUS">method=updateflag</string>
+    <string name="URL_UPDATE_DELIVERY_FLAG">method=updatedeliveryflag</string>
+    <string name="URL_CREATE_CHALLAN_DETAIL">method=createchallandetail</string>
+    <string name="URL_Upload_TRUCK_TRIP_LATEST">method=ITSTrip_Web_Emp_Mobile</string>
+    <string name="URL_Upload_TRUCK_TRIP_ADD_CONSIGNEE">method=AddRosterDestination</string>
+    <string name="URL_GET_CONTACTBOOK">method=GetContactBook</string>
+    <string name="URL_Upload_Expenses">method=uploadexpenses</string>
+    <string name="URL_GETTRUCKTRIP">method=GetTruckTrip</string>
+    <string name="URL_GETTRUCK_DASHBOARD_MAIN">method=GetTruckDashboards_Main</string>
+    <string name="URL_TRUCK_DASHBOARD_NEW">method=GetTruckDashboards_New</string>
+    <string name="URL_TRUCK_FINAL_TRANSACTIONS">method=truckfinancialtransactions</string>
+    <string name="URL_GET_EXPENSE_REPORT_RESULT">method=getexpensereport</string>
+    <string name="URL_GET_PROFILE">method=GetUserProfileInfo</string>
+    <string name="URL_GET_ALL_IMAGES">method=GetALLImages</string>
+    <string name="URL_GET_DRIVER_REPORT_TRUCK">method=GetTripReportTruck</string>
+    <string name="URL_DELETE_DOC">http://www.mmthinkbiz.com/mobileservice.aspx?method=deletedocfile</string>
+
+    <string name="URL_GET_DRIVER_TRIP_EXP_SUMMARY">method=Getdrivertripexpsummary</string>
+
+    <string name="URL_CREATE_TRIP">method=ITSTrip_Web_Emp_Mobile</string>
+
+    <string name="URL_CREATE_TRIP1">method=InsertRosterCallhistory</string>
+    <string name="URL_GEOFENCE">method=GeofenceDetailsGrocery</string>
+    <!--    http://www.mmthinkbiz.com/mobileservice.aspx?-->
+    <string name="URL_CREATE_TRIP2">method=Insertmanualtripedit</string>
+
+    <string name="URL_USAGE_REPORT">method=GetUsagesreport</string>
+    <string name="URL_CREATE_GEOFENCE">method=CreateMobile_Geofence</string>
+
+
+    <string name="URL_CREATE_TRIP3">method=vehiclereassign</string>
+    <string name="URL_CALL_HISTORY">method=Showcallhistory</string>
+
+    <string name="email">Email :</string>
+    <string name="enable">Enable Notification</string>
+    <string name="error">Error in Retrieving Data</string>
+    <string name="exit">Press again to exit</string>
+    <string name="forgot_pass"><u>Forgot Password</u></string>
+    <string name="strexplore"><u>I JUST WANNA EXPLORE</u></string>
+    <string name="nospam">Don\'t worry ! We\'ll not spam you.</string>
+    <string name="hills">Hills</string>
+    <string name="pth">D:\\uploadeddocuments\\</string>
+    <string name="image">image</string>
+    <string name="intern">Please check your internet</string>
+    <string name="km_ran">Nearby KM Range</string>
+
+    <string name="vehicle_lock">Green color represents <b>Lock</b> vehicle .</string>
+    <string name="vehicle_unlock">Red color represents <b>UnLock</b> vehicle .</string>
+    <string name="vehicle_onignition">Green color represents <b>Ignition On</b> vehicle .</string>
+    <string name="vehicle_offignition">Red color represents <b>Ignition Off </b> Vehicle .</string>
+
+    <string name="vehicle_battery">This icon represents vehicle <b>Battery</b>.</string>
+    <string name="vehicle_gpssignal">This icon represents vehicle <b>Gps Signal</b>.</string>
+
+
+    <string name="donut_idle">Yellow color represents <b>Idle</b> vehicle .</string>
+    <string name="donut_nosignal">Red color represents having <b>No signal</b> vehicle .</string>
+    <string name="donut_running">Green color represents <b>Running</b> vehicle .</string>
+    <string name="donut_all">Sky blue represents <b>All </b> Vehicle .</string>
+
+    <string name="chart_0">Green color represents <b>0-2</b> hours vehicle idle time .</string>
+    <string name="chart_2">Yellow color represents <b>2-4</b> hours vehicle idle time .</string>
+    <string name="chart_4">Dark yellow color represents <b>4-6</b> hours vehicle idle time .</string>
+    <string name="chart_6">Yellow color represents <b>6-8</b> hours vehicle idle time .</string>
+    <string name="chart_8">Orange color represents <b>8-10</b> hours vehicle idle time .</string>
+    <string name="chart_10">Red color represents <b>10+</b> hours vehicle idle time .</string>
+
+
+    <string name="vehicle_load1">Yellow color represents <b>Empty</b> vehicle  .</string>
+    <string name="vehicle_load2">Green color represents Vehicle <b>Loading</b> Status .</string>
+
+    <string name="vehicle_unload1">Skyblue color represents <b>Loaded</b> vehicle .</string>
+    <string name="vehicle_unload2">Green color represents Vehicle <b>Unloading</b> .</string>
+
+    <string name="donut_trip_closed">Green color represents <b>Closed</b> vehicle .</string>
+    <string name="donut_trip_nosignal">Yellow color represents having <b>No signal</b> vehicle .</string>
+    <string name="donut_trip_opened">Red color represents <b>Opened</b> vehicle .</string>
+    <string name="donut_trip_powercut">Sky blue represents <b>Power cut</b> Vehicle .</string>
+    <string name="donut_trip_all">Yellow color represents <b>All</b> vehicle .</string>
+    <string name="loading">There is some problem in loading</string>
+    <string name="log">Do you want to logout?</string>
+    <string name="login">please logout and login again.</string>
+    <string name="loginButtonText">Login</string>
+    <string name="map_exc">Exception Occured While Drawing the Whole Map</string>
+    <string name="map_mode">Map Source</string>
+    <string name="map_setting">Map Setting</string>
+    <string name="map_t">Select Map Type</string>
+    <string name="mapbox">MapBox</string>
+    <string name="mapnik">Mapnik</string>
+    <string name="mapquest_aerial">Mapquest Aerial</string>
+    <string name="mapquest_osm">Mapquest</string>
+    <string name="mark_l">Problem reading list of markers.</string>
+    <string name="max_no_of_alerts">Max No. of Alerts</string>
+    <string name="media_picker_camera">Camera</string>
+    <string name="media_picker_cancel">Cancel</string>
+    <string name="media_picker_gallery">Gallery</string>
+    <string name="media_picker_ok">Ok</string>
+    <string name="media_picker_read_Write_external_storage">Read &amp; Write External Storage</string>
+    <string name="media_picker_select_from">Select From:</string>
+    <string name="media_picker_some_permission_is_denied">Some Permission is Denied</string>
+    <string name="media_picker_you_need_to_grant_access_to">You need to grant access to</string>
+    <string name="menu_kms_summary">KMS Summary</string>
+    <string name="menu_logout">Logout</string>
+    <string name="mobile">Mobile :</string>
+    <string name="msg_full_image">"You can't no longer choose."</string>
+
+    <string name="open_source_libraries">Open Source Libraries</string>
+    <string name="msg_loading_image">Loading...</string>
+    <string name="msg_no_image">"There is no album.
+Take a Picture!"</string>
+    <string name="msg_no_selected">There is no selected image.</string>
+    <string name="msg_permission">permission deny</string>
+    <string name="show_tcom_as_home_page">Show FleetGuru as home page</string>
+    <string name="my_location">My location</string>
+    <string name="check">Check your phone registered for Notification</string>
+    <string name="check_your_phone_registered_for_notification">Check your phone registered for Notification</string>
+    <string name="color_themes">Color Themes</string>
+
+    <string name="new_text">Click outside circle to cancel tutorials</string>
+    <string name="no">No</string>
+    <string name="sound_on">Sound On</string>
+    <string name="ver">You are using new Version of application</string>
+    <string name="vers">You are using Version:</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="vlist">Vehicle list updated at :</string>
+    <string name="wait_">Please Wait...</string>
+    <string name="re_run_tutorials">Re-run tutorials</string>
+    <string name="refresh">Refresh</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="roads_nl">Netherlands roads overlay</string>
+    <string name="rs">₹</string>
+    <string name="run">Your Phone is not registered for notifications, please click on Run to register</string>
+
+    <string name="supplier_html"><![CDATA[ <font>Shop : </font> <font><b>ASD</b></font>]]></string>
+
+    <string name="supplier_html1"><![CDATA[ <font>Supplier :</font> <font><b>ASD</b></font>]]></string>
+
+    <string name="html_text_stopage"><![CDATA[ <font color=#000000><b>TEST</b></font> <font>Avg</font>]]></string>
+
+
+    <string name="no_trips">Sorry !! No Trips Available here.</string>
+    <string name="no_vehicles">Sorry !! No Vehicles Available here.</string>
+    <string name="URL_LOCK_SUMMARY">method=GetVehicle_Lock_Summary</string>
+    <string name="not_a_member_yet">Not a member Yet</string>
+    <string name="noti">Your device has registered successfully for notifications</string>
+    <string name="notifc">Notifications</string>
+    <string name="notification">Notification</string>
+    <string name="offline">Offline mode</string>
+    <string name="disable_notification">Disable Notification</string>
+    <string name="disabled">Disabled Notification</string>
+    <string name="do_you_want_to_register_for_ecommerce">Do you want to register for Ecommerce</string>
+    <string name="done">Done</string>
+    <string name="title_activity_about__us">About_Us</string>
+    <string name="title_activity_map_view_">Map</string>
+
+    <string name="lighttheme">Do you want to set <b>Light</b> theme?</string>
+    <string name="darktheme">Do you want to set <b>Dark</b> theme?</string>
+
+    <string name="html_text"><![CDATA[ <font>Driver on </font> <font color=#000000><b>VEHICALNO</b></font>]]></string>
+
+
+    <string name="URL_GET_COMPLAINT_REPORT">method=getcomplaintreport</string>
+    <string-array name="array_uom">
+        <item>Pieces</item>
+        <item>Box</item>
+        <item>Packet</item>
+        <item>Cartoon</item>
+        <item>KG</item>
+        <item>Gram</item>
+
+        <!--
+        7781
+        centurytracking
+        123456
+        -->
+
+    </string-array>
+    <string-array name="array_status">
+        <!--
+                <item>Pending</item>
+                <item>Hold</item>
+        -->
+        <item>Cancelled</item>
+        <item>Accepted</item>
+        <item>Completed</item>
+        <item>Out For Delivery</item>
+        <item>Ready for delivery</item>
+        <item>Packed</item>
+        <item>Parcel Packed</item>
+
+
+        <item>Delivered</item>
+
+
+    </string-array>
+
+
+    <string-array name="stoppage_duration">
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+        <item>20 Minutes</item>
+        <item>25 Minutes</item>
+        <item>30 Minutes</item>
+        <item>35 Minutes</item>
+        <item>40 Minutes</item>
+        <item>45 Minutes</item>
+        <item>50 Minutes</item>
+        <item>55 Minutes</item>
+        <item>60 Minutes</item>
+    </string-array>
+    <string name="mobile_et">Contact No(username)</string>
+    <string name="flat_et">Flat No.</string>
+    <string name="Address">Address</string>
+    <string name="building_et">Building</string>
+
+    <string name="rupee">\u20B9</string>
+    <string name="recurringrupee">\u20B9 67.00</string>
+    <string name="strpayfrag">\u20B9 399</string>
+    <string name="proceed">SELECT &amp; Proceed</string>
+
+    <string name="verification_code_subtext">Please type the verification code sent to +xxxxxxxxxx</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="hlp">In case of any query related to your order please feel free to contact us on +91-9910004715</string>
+    <string name="validate">Verify</string>
+    <string name="resend">Didn\'t recevied yet ? </string>
+    <string name="resend1">Resend</string>
+    <string name="back">Back</string>
+
+
+    <string name="Companyheader">method=GetPDFBill</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_one">Login</string>
+    <string name="ordr1">Your Order ID is</string>
+    <string name="dlvr"> You Will Be Notified Once Your Order Is Confirmed by the store</string>
+    <string name="ordr">Order Placed Successfully</string>
+    <string name="thnk">Thanks For Shopping With Us</string>
+    <string name="ACTIVITY_MEETING">method=InsertVisitSummary</string>
+    <string name="PRODUCT_OFFER">method=CategoryCodeMaster</string>
+
+    <string name="msg_error_unable_select_profile_pic" tools:ignore="MissingTranslation">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo" tools:ignore="MissingTranslation">Set profile image</string>
+    <string name="lbl_take_camera_picture" tools:ignore="MissingTranslation">Take a picture</string>
+    <string name="lbl_choose_from_gallery" tools:ignore="MissingTranslation">Choose from gallery</string>
+    <string name="toast_image_intent_null" tools:ignore="MissingTranslation">Image picker option is missing!</string>
+    <string name="dialog_permission_title" tools:ignore="MissingTranslation">Grant Permissions</string>
+    <string name="dialog_permission_message" tools:ignore="MissingTranslation">This app needs permission to use this feature. You can grant them in app settings.</string>
+
+
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+    <string name="nonce_placeholder">Nonce: %s</string>
+    <string name="ideal_id_placeholder">iDEAL payment id: \n %s</string>
+    <string name="ideal_status_placeholder">iDEAL payment status: \n %s</string>
+    <string name="device_data_placeholder">Device Data: %s</string>
+    <string name="drop_in">Drop-In</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="paypal_button">@string/paypal</string>
+    <string name="visa_checkout_button">Visa Checkout</string>
+    <string name="ideal_button">Pay with iDEAL</string>
+    <string name="ideal_bank_icon">iDEAL bank icon</string>
+    <string name="local_payments_button">Local Payments</string>
+    <string name="preferred_payment_methods_button">Pref Payment Methods</string>
+    <string name="cards">Credit or Debit Cards</string>
+    <string name="create_transaction">Create a Transaction</string>
+    <string name="buy">Buy</string>
+    <string name="payment_icon">payment icon</string>
+
+    <!-- CardActivity -->
+    <string name="purchase">Purchase</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="sms_auth_code">SMS Auth Code</string>
+
+    <!-- CreateTransactionActivity -->
+    <string name="processing_transaction">Processing Transaction</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="transaction_complete">Transaction Complete</string>
+
+    <!-- Settings -->
+    <string name="empty"></string>
+    <string name="none">None</string>
+    <string name="options">Options</string>
+    <string name="sandbox">Sandbox</string>
+    <string name="production">Production</string>
+    <string name="authorization">Authorization</string>
+    <string name="tokenization_key">Use Tokenization Key</string>
+    <string name="tokenization_key_summary">Use tokenization key for authorizing requests</string>
+    <string name="customer">Customer</string>
+    <string name="customer_summary">The customer id to use</string>
+    <string name="merchant_account">Merchant Account</string>
+    <string name="empty_merchant_account">Not specifying a merchant account will use the default merchant account. \n\nMerchant Account: %s</string>
+    <string name="collect_device_data">Collect Device Data</string>
+    <string name="collect_device_data_summary">Collects device data for fraud purposes</string>
+    <string name="android_pay">Android Pay</string>
+    <string name="usd">USD</string>
+    <string name="us">US</string>
+    <string name="android_pay_require_shipping_address">Require Shipping Address</string>
+    <string name="android_pay_require_shipping_address_summary">Require shipping address from the user</string>
+    <string name="android_pay_require_phone_number">Require Phone Number</string>
+    <string name="android_pay_require_phone_number_summary">Require phone number from the user</string>
+    <string name="android_pay_currency_title">Currency</string>
+    <string name="android_pay_currency_summary">Must be ISO–4217 format. \n\nCurrency: %s</string>
+    <string name="android_pay_allowed_countries_for_shipping_title">Allowed countries for shipping</string>
+    <string name="android_pay_allowed_countries_for_shipping_summary">Must be ISO–3166–2, separate by comma for multiple countries. \n\nCountries: %s</string>
+    <string name="google_payment_require_billing_address">Require Billing Address</string>
+    <string name="google_payment_require_billing_address_summary">Require billing address from the user</string>
+    <string name="google_payment_allow_prepaid_cards">Allow Prepaid Cards</string>
+    <string name="google_payment_allow_prepaid_cards_summary">Allow the user to use prepaid cards as a payment method</string>
+    <string name="google_payment_require_email">Require Email Address</string>
+    <string name="google_payment_require_email_summary">Require email address from the user</string>
+    <string name="paypal">PayPal</string>
+    <string name="paypal_use_hardcoded_configuration">Use Hardcoded Configuration</string>
+    <string name="paypal_use_hardcoded_configuration_summary">Use the configuration included in the PayPal SDK instead of downloading new configuration</string>
+    <string name="paypal_request_address_scope">Request Address Scope</string>
+    <string name="paypal_request_address_scope_summary">Request address scope from the user</string>
+    <string name="three_d_secure">3D Secure</string>
+    <string name="enable_three_d_secure">Enable 3D Secure</string>
+    <string name="enable_three_d_secure_summary">3D Secure will automatically be run on all Card payment methods</string>
+    <string name="require_three_d_secure">Require 3D Secure</string>
+    <string name="require_three_d_secure_summary">Requires a successful authentication for 3D Secure transactions</string>
+    <string name="paypal_disable_signature_verification">Disable app switch signature verification</string>
+    <string name="paypal_disable_signature_verification_summary">Allows app switch with a PayPal Wallet app that is not signed</string>
+    <string name="paypal_single_payment">Single Payment</string>
+    <string name="paypal_billing_agreement">Billing Agreement</string>
+    <string name="paypal_intent_type">Intent Type</string>
+    <string name="paypal_landing_page_type">Landing Page Type</string>
+    <string name="paypal_intent_authorize">Authorize</string>
+    <string name="paypal_intent_order">Order</string>
+    <string name="paypal_intent_sale">Sale</string>
+    <string name="paypal_display_name">Display Name</string>
+    <string name="paypal_display_name_summary">Name to be displayed in the PayPal flow</string>
+    <string name="paypal_landing_page_type_billing">Billing</string>
+    <string name="paypal_landing_page_type_login">Login</string>
+    <string name="venmo">Venmo</string>
+    <string name="vault_venmo">Vault Venmo</string>
+    <string name="vault_venmo_summary">Vault Venmo payment methods on creation. Requires a customer id to be set.</string>
+    <string name="amex">Amex</string>
+    <string name="amex_rewards_balance">Get Rewards Balance</string>
+    <string name="amex_rewards_balance_summary">Fetch Amex Rewards Balance on Card Tokenization. Requires a Client Token and relevant configurations.</string>
+
+    <!-- PayPalActivity -->
+    <string name="paypal_wallet_available">PayPal Wallet app available for app switch: %b</string>
+    <string name="paypal_credit_offered">Offer PayPal Credit</string>
+    <string name="paypal_credit_offered_summary">Offers PayPal Credit prominently in the payment flow</string>
+    <string name="paypal_useraction_commit_title">Set Useraction to Commit</string>
+    <string name="paypal_useraction_commit_summary">Sets the Payment User Action to Commit for Express Checkout Transactions</string>
+    <string name="paypal_address_override">Send a shipping address to PayPal</string>
+    <string name="paypal_address_override_summary">Sends a shipping address as an override option to PayPal for any PayPal request</string>
+
+    <!-- PreferredPaymentMethodsActivity -->
+    <string name="fetch_preferred_payment_methods_button">Preferred Payment Methods</string>
+    <string name="preferred_payment_methods_progress">Fetching preferred payment methods…</string>
+</resources>

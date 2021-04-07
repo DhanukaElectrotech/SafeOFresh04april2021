@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/round_up_bottomsheet"
+
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_width="30dp"
+
+                    android:src="@drawable/mapp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/citynamed"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black3"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.6"
+
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/chooseadddialog"
+                    android:layout_width="10dp"
+                    android:text="Change"
+                    android:background="@drawable/filledbackground"
+                    android:textColor="#e1ad01"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"
+                    android:textSize="22sp"
+                    android:gravity="center"
+
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addressselecteddialog"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black3"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+
+                    android:maxLength="200"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.6"
+
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addnewsociety"
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent"
+
+                android:hint="HOUSE/FLAT/BLOCK NO."
+                android:minHeight="20dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#34495e"
+                app:met_floatingLabel="highlight"  />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/lanmarktxt"
+
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent"
+
+                android:hint="LANDMARK"
+                android:minHeight="20dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#34495e"
+                app:met_floatingLabel="highlight"  />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/saveastxt"
+
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent"
+
+                android:hint="Save As"
+                android:minHeight="20dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#34495e"
+                app:met_floatingLabel="highlight"  />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_submittxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+
+                    android:background="@drawable/circular_location_btn"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

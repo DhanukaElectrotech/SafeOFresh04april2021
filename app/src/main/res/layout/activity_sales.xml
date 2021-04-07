@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dhanuka.morningparcel.activity.SalesActivity">
+    <LinearLayout
+        android:id="@+id/topL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/backbtnicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:onClick="makeBackClick"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbtnicon"
+            android:padding="7dp"
+            android:text="GR Report"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtmargin"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_centerVertical="true"
+
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txttitle"
+
+            android:gravity="center"
+            android:text="Total Margin :"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.dhanuka.MMthinkBizUtils.DonutProgress
+            android:id="@+id/txtmarginid"
+            android:layout_width="65dp"
+
+            android:layout_toRightOf="@+id/txtmargin"
+            app:donut_text_color="@color/white"
+            app:donut_text="2089"
+
+            app:donut_text_size="12sp"
+            android:layout_gravity="center"
+            app:donut_unfinished_color="#fff1c40f"
+            android:outlineSpotShadowColor="@color/red"
+            android:layout_height="65dp"/>
+
+
+    </LinearLayout>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tlSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        app:tl_indicator_color="@color/colorAccent"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="1.5dp"
+        app:tl_textAllCaps="false"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@android:color/black"
+        app:tl_textUnselectColor="@android:color/black"
+        app:tl_textsize="18sp" />
+
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/black3"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

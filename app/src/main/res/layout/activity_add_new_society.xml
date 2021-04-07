@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapclasslayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="com.dhanuka.morningparcel.activity.AddNewSociety">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mtl"
+        android:layout_width="match_parent"
+
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_color">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:onClick="backClick"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbtnicon"
+            android:padding="7dp"
+            android:text="Add New Society"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/VehicleNum1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:text="Add New Society"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mapLayout"
+            android:layout_width="match_parent"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="200dp"
+
+            android:layout_below="@+id/llPh">
+
+
+            <fragment
+                android:id="@+id/map1"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </fragment>
+
+            <ImageView
+                android:id="@+id/imageView"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_centerInParent="true"
+
+                android:src="@mipmap/wo_pin" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+     android:visibility="gone"       android:id="@+id/llstate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="State"
+                android:textColor="@color/black3"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center_vertical"
+                android:text=":"
+                android:textColor="@color/black3"
+
+                android:textStyle="bold" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/spinnerStatee"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+                android:layout_weight="1"
+                android:hint=" State"
+                android:minHeight="50dp"
+                android:textColor="#34495e"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+        <TextView
+
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+            android:layout_margin="10dp"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="City"
+            android:textColor="@color/black3"
+
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/llcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llstate"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:gravity="center_vertical"
+
+                android:text=":"
+                android:textColor="@color/black3"
+
+                android:textStyle="bold" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="0dp"
+
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="40dp"
+                android:layout_weight="1"
+                android:backgroundTintMode="@color/colorAccent"
+                android:entries="@array/cityarray"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lladd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llcity"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:orientation="horizontal">
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addnewsociety"
+                android:layout_width="0dp"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:hint="society"
+                android:minHeight="30dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#34495e"
+                app:met_floatingLabel="highlight"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lladd"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:orientation="horizontal">
+
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:minHeight="30dp"
+                android:textColor="#34495e"
+                android:selectAllOnFocus="true"
+
+                app:met_floatingLabel="highlight"  />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:paddingRight="10dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mapLayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_ola"
+            android:minWidth="150dp"
+            android:text="Submit"
+
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

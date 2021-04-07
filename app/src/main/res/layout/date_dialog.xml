@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/date_dialog"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Base_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="7dp"
+                    android:id="@+id/titleText"
+                    android:text="Filter By"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <FrameLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/ic_date" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_sdate_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="  Start Date"
+                        android:paddingBottom="-5dp"
+                        app:met_floatingLabel="normal" />
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/time1"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/ic_time"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_starttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="  Start Time"
+                        android:paddingBottom="-5dp"
+                        app:met_floatingLabel="normal" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_marginTop="-15dp"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/ic_date"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_current_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="  End Date"
+                        android:paddingBottom="-5dp"
+                        app:met_floatingLabel="normal" />
+
+                 </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/time2"
+                    android:layout_width="0sp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/ic_time"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_endtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="  End Time"
+                        android:paddingBottom="-5dp"
+                        app:met_floatingLabel="normal" />
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"></FrameLayout>
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="100dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_height="48dp"
+                    android:textColor="@color/bg_btn_white_blue_normal"
+                    android:background="@drawable/black_ola"
+                    android:textAllCaps="false"
+                    android:text="Cancel" />
+                <FrameLayout
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"></FrameLayout>
+
+                <Button
+                    android:id="@+id/btnFilter"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/black_ola"
+                    android:text="Set"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg_btn_white_blue_normal"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <FrameLayout
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"></FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

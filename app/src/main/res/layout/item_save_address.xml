@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/frame_color"
+        android:gravity="center"
+        android:minHeight="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+
+
+            android:layout_marginLeft="5dp"
+            android:padding="@dimen/margin3dp"
+            android:src="@drawable/markerrest" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5dp"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:minHeight="30dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp">
+
+                <TextView
+                    android:id="@+id/cityname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:gravity="center_vertical"
+                    android:text="Old Faridabad"
+                    android:textColor="@color/black3"
+                    android:textSize="25sp"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chooseadd"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/filledbackground"
+                    android:gravity="center"
+                    android:text="Change"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_orange"
+                    android:textSize="14sp"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp">
+
+
+                <TextView
+                    android:id="@+id/completeaddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:maxLength="90"
+                    android:text="802 Sovereign 4,Vatika city,Crimson West..."
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+
+                    <ImageView
+                        android:id="@+id/imgDelete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/delete_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#efefef" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:background="#efefef" />
+
+
+</LinearLayout>

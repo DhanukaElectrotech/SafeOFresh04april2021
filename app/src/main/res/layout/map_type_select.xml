@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Map Type"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/firstmapcard"
+                android:layout_width="70dp"
+
+                android:layout_height="70dp"
+
+                android:layout_margin="10.0dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgroun_corners"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mapfirsttype"/>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_below="@+id/firstmapcard"
+                android:layout_width="wrap_content"
+                android:text="Default"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+
+                android:layout_height="70dp"
+
+                android:layout_margin="10.0dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/satellitemapic"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_below="@+id/firstmapcard"
+                android:layout_width="match_parent"
+                android:text="Satellite"
+                android:textAlignment="center"
+
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+
+                android:layout_height="70dp"
+
+                android:layout_margin="10.0dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mapterrain"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_below="@+id/firstmapcard"
+                android:layout_width="match_parent"
+                android:text="Terrain"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Map Details"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+
+                android:layout_height="70dp"
+
+                android:layout_margin="10.0dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgroun_corners"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:src="@drawable/maptransitic"/>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_below="@+id/firstmapcard"
+                android:layout_width="wrap_content"
+                android:text="Default"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+
+                android:layout_height="70dp"
+
+                android:layout_margin="10.0dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bycyclingic"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_below="@+id/firstmapcard"
+                android:layout_width="match_parent"
+                android:text="Bicycling"
+                android:textAlignment="center"
+
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+
+                android:layout_height="70dp"
+
+                android:layout_margin="10.0dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/trafficic"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_below="@+id/firstmapcard"
+                android:layout_width="match_parent"
+                android:text="Traffic"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/vehical_list"
+            android:icon="@drawable/vehicle_list_light"
+            android:title="Vehical List"></item>
+        <item
+            android:id="@+id/bluetooth_lock"
+            android:icon="@drawable/wifi"
+            android:title="Bluetooth Lock"></item>
+        <item
+            android:id="@+id/notification"
+            android:checked="false"
+            android:icon="@drawable/notification_light"
+            android:title="Notification"></item>
+        <item
+            android:id="@+id/mapView"
+            android:checked="false"
+            android:icon="@drawable/map_view_light"
+            android:title="Map View"></item>
+
+<!--        <item-->
+<!--            android:id="@+id/settings"-->
+<!--            android:checked="false"-->
+<!--            android:icon="@drawable/settings_light"-->
+<!--            android:title="Settings"></item>-->
+        <item
+            android:id="@+id/kmsSummary"
+            android:checked="false"
+            android:icon="@drawable/kms_summary_light"
+            android:title="Kms Summary"></item>
+
+        <item
+            android:id="@+id/geofences"
+            android:checked="false"
+            android:icon="@drawable/my_geo_fences_light"
+            android:title="My Geo Fences"></item>
+
+        <item
+            android:id="@+id/driverList"
+            android:checked="false"
+            android:icon="@drawable/driver_list_light"
+            android:title="Driver List"></item>
+
+        <item
+            android:id="@+id/searchVehicals"
+            android:checked="false"
+            android:icon="@drawable/vehicle_list_light"
+            android:title="Search Vehicle"></item>
+
+        <item
+            android:id="@+id/reachUs"
+            android:checked="false"
+            android:icon="@drawable/reach_us_light"
+            android:title="Reach Us"></item>
+    <item
+            android:id="@+id/faq"
+            android:checked="false"
+            android:icon="@drawable/ic_info"
+            android:title="Faq"></item>
+        <item
+            android:id="@+id/aboutUs"
+            android:checked="false"
+            android:icon="@drawable/about_light"
+            android:title="About Us"></item>
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/logout_light"
+            android:title="Logout"></item>
+    </group>
+</menu>

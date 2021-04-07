@@ -1,0 +1,5 @@
+include ':mobilertc'
+include ':commonlib'
+rootProject.name='SafeOKart'
+include ':app', ':android-pdf-viewer'
+include ':library'

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/backgroundimage"
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/restaurant_border">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="No contact delivery"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:minWidth="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="Have your order dropped off at your door gate for added safety "
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/clickbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="Know more"
+            android:textColor="@color/redlight"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" >
+        <ImageView
+            android:id="@+id/imglink"
+            android:layout_width="match_parent"
+            android:src="@drawable/map_signal"
+            android:scaleType="fitXY"
+
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

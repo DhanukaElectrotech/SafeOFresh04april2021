@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/buildingheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="Choose  message type"
+            android:textColor="@color/black3"
+            android:textAllCaps="true"
+
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin5dp"
+
+            android:background="@drawable/backcorner_accent"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/txttypespin"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:hint="@string/building_et"
+                android:inputType="text"
+
+                android:minHeight="40dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+              </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llmsg"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/backcorner_accent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/composeid"
+            android:layout_width="match_parent"
+            android:maxLines="100"
+            android:padding="4dp"
+            android:lines="5"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:hint="Type your message here"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textMultiLine"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/wordcountxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 characters"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"/>
+    <LinearLayout
+        android:id="@+id/llnotif1"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/backcorner_accent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:id="@+id/notifheader"
+            android:layout_width="match_parent"
+            android:maxLines="100"
+            android:padding="4dp"
+            android:lines="1"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:hint="Notification Header"
+            android:background="@color/transparent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llnotif2"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/backcorner_accent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/notifcontent"
+            android:layout_width="match_parent"
+            android:maxLines="100"
+            android:padding="4dp"
+            android:lines="3"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:hint="Enter Notification Content"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textMultiLine"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llnotif3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:text="Attach Images(Optional)"
+
+            android:textColor="@color/black2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/payment_border"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imagepick" />
+
+
+            <ImageView
+                android:id="@+id/imagepick"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@mipmap/wo_camera" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/sendnotifpreview"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:text="Preview"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/sendfinal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Send"
+            android:background="@color/colorAccent"
+
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

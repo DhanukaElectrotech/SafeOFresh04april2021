@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/groupmaster"
+        >
+        <item
+            android:id="@+id/vehical_list"
+             android:icon="@drawable/vehicle_list_new"
+            android:title="Vehicle List"></item>
+        <item
+            android:id="@+id/bluetooth_lock"
+            android:icon="@drawable/vehicle_list_light"
+            android:title="Bluetooth Lock"></item>
+
+        <item
+            android:id="@+id/notification"
+            android:checked="false"
+            android:icon="@drawable/notification_new"
+            android:title="Notification"></item>
+        <item
+            android:id="@+id/mapView"
+            android:checked="false"
+            android:icon="@drawable/map_view_new"
+            android:title="Map View"></item>
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:icon="@drawable/settings_new"
+            android:title="Settings"></item>
+        <item
+            android:id="@+id/kmsSummary"
+            android:checked="false"
+            android:icon="@drawable/kms_summary_new"
+            android:title="Kms Summary"></item>
+
+        <item
+            android:id="@+id/geofences"
+            android:checked="false"
+            android:icon="@drawable/my_geo_fences_new"
+            android:title="My Geo Fences"></item>
+
+        <item
+            android:id="@+id/driverList"
+            android:checked="false"
+            android:icon="@drawable/drivers_list_new"
+            android:title="Driver List"></item>
+
+        <item
+            android:id="@+id/searchVehicals"
+            android:checked="false"
+            android:icon="@drawable/vehicle_list_new"
+            android:title="Search Vehicle"></item>
+
+        <item
+            android:id="@+id/reachUs"
+            android:checked="false"
+            android:icon="@drawable/reach_us_new"
+            android:title="Reach Us"></item>
+
+        <item
+            android:id="@+id/aboutUs"
+            android:checked="false"
+            android:icon="@drawable/about_dark"
+            android:title="About Us"></item>
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/logout_new"
+            android:title="Logout"></item>
+    </group>
+
+
+    <group
+        android:id="@+id/groupother"
+        >
+        <item
+
+            android:icon="@drawable/vehicle_list_new"
+            android:title="Vehicle List"></item>
+        <item
+
+            android:icon="@drawable/vehicle_list_light"
+            android:title="Bluetooth Lock"></item>
+
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/notification_new"
+            android:title="Notification"></item>
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/map_view_new"
+            android:title="Map View"></item>
+
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/settings_new"
+            android:title="Settings"></item>
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/kms_summary_new"
+            android:title="Kms Summary"></item>
+
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/my_geo_fences_new"
+            android:title="My Geo Fences"></item>
+
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/drivers_list_new"
+            android:title="Driver List"></item>
+
+        <item
+
+            android:checked="false"
+            android:icon="@drawable/vehicle_list_new"
+            android:title="Search Vehicle"></item>
+
+        <item
+            android:id="@+id/reachUso"
+            android:checked="false"
+            android:icon="@drawable/reach_us_new"
+            android:title="Reach Us"></item>
+
+        <item
+            android:id="@+id/aboutUso"
+            android:checked="false"
+            android:icon="@drawable/about_dark"
+            android:title="About Us"></item>
+
+        <item
+            android:id="@+id/logouto"
+            android:checked="false"
+            android:icon="@drawable/logout_new"
+            android:title="Logout"></item>
+    </group>
+</menu>

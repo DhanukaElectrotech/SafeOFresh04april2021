@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.dhanuka.morningparcel.restaurant.Restaurantdashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:minHeight="30dp"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:layout_height="25dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/mapp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:text="Home"
+            android:textColor="@color/black3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1.6"
+
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="0dp"
+
+            android:layout_weight="0.5"
+            android:src="@drawable/offer"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="17sp"
+
+            android:layout_weight="0.3"
+         android:textColor="@color/black3"
+            android:textStyle="bold"
+            android:text="Offers"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-10dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:maxLength="90"
+            android:text="802 Sovereign 4,Vatika city,Crimson West..."
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#efefef"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:layout_height="30dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:padding="7dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/downarrow"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Safeobuddy Key measures to ensure safety"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:padding="7dp"
+            android:src="@drawable/downarrow"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/maincardcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#efefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/secondarycontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#efefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categorycard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#efefef"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:text="Top Picks For You"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:textSize="20sp"
+
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="@dimen/margin5dp"
+        android:drawableLeft="@drawable/like"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/discountcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#efefef"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/circularbrandcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>

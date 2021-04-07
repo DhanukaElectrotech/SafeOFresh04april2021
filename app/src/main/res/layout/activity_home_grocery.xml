@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="com.dhanuka.morningparcel.activity.EnquiryActivity"
+
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/msgheader"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp"
+                android:drawableRight="@drawable/ic_infotag"
+                android:gravity="center"
+                android:lines="1"
+
+                android:singleLine="true"
+                android:text="Hello i am text"
+                android:textColor="@color/black2"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <com.dhanuka.morningparcel.customViews.KKViewPager
+                android:id="@+id/kk_pager"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:scrollbars="none"
+                app:dotsColor="#000000"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="8dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:progressMode="true"
+                app:selectedDotColor="@color/colorAccent" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation"
+                android:nestedScrollingEnabled="true"
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:id="@+id/categorylayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="openPlaystore"
+                android:scaleType="fitXY"
+                android:src="@drawable/arogya"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_height="0dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation" />
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/mLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="-100dp"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_search" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_Search"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:onClick="makeSearch"
+            android:src="@drawable/ic_search"
+            android:tint="@color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="mini" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="   " />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--
+                        <com.google.android.material.bottomnavigation.BottomNavigationView
+            -->
+
+
+
+</LinearLayout>

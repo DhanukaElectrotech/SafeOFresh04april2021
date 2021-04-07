@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/gnametxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/margin5dp"
+                android:gravity="center"
+                android:textColor="@color/red"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/ivProduct"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Product Name"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/pimage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/margin5dp"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/marginheader"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:layout_alignLeft="@+id/tvName"
+
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/tvOriginalPrice"
+
+                        android:text="In Qty"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/lastweekheader"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:layout_alignLeft="@+id/tvName"
+                        android:layout_marginRight="10dp"
+
+
+
+                        android:layout_below="@+id/marginheader"
+                        android:gravity="center_vertical"
+
+
+                        android:text="Total Sale"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/purchaseheader"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_alignLeft="@+id/tvName"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+
+
+
+                        android:layout_below="@+id/lastweekheader"
+                        android:gravity="center_vertical"
+
+
+                        android:text="Total Purchase"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/groupheader"
+                        android:layout_width="match_parent"
+                        android:layout_alignLeft="@+id/tvName"
+
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_below="@+id/purchaseheader"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+
+
+                        android:text="Out Qty"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_alignLeft="@+id/tvName"
+
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_below="@+id/purchaseheader"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+
+
+                        android:text="Balance"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_alignLeft="@+id/tvName"
+
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_below="@+id/purchaseheader"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+
+
+                        android:text="Group Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_alignLeft="@+id/tvName"
+
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_below="@+id/purchaseheader"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+
+
+                        android:text="Sub Group Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/margin5dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/marginpid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/tvOriginalPrice1"
+                        android:layout_marginLeft="@dimen/margin5dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/marginheader"
+                        android:text="14.29%"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/lastweeksaleid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/marginpid"
+                        android:layout_marginLeft="@dimen/margin5dp"
+                        android:gravity="center_vertical"
+
+                        android:layout_toRightOf="@+id/lastweekheader"
+                        android:text="altu faltu"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/purchaseweekid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/lastweeksaleid"
+                        android:layout_marginLeft="@dimen/margin5dp"
+                        android:gravity="center_vertical"
+
+                        android:layout_toRightOf="@+id/purchaseheader"
+                        android:text="altu faltu"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/groupnameid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/purchaseweekid"
+                        android:layout_marginLeft="@dimen/margin5dp"
+
+                        android:layout_toRightOf="@+id/groupheader"
+                        android:text=" Namkeen &amp; Papads"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtblc"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/purchaseweekid"
+                        android:layout_marginLeft="@dimen/margin5dp"
+
+                        android:layout_toRightOf="@+id/groupheader"
+                        android:text=" Namkeen &amp; Papads"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/txtgname"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/purchaseweekid"
+                        android:layout_marginLeft="@dimen/margin5dp"
+
+                        android:layout_toRightOf="@+id/groupheader"
+                        android:text="Group name"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtsgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/purchaseweekid"
+                        android:layout_marginLeft="@dimen/margin5dp"
+
+                        android:layout_toRightOf="@+id/groupheader"
+                        android:text="sub group name"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">-->
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

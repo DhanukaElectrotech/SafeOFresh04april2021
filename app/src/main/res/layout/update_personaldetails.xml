@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@android:color/black" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/location_marker"
+        android:drawablePadding="8dp"
+        android:text="Add Delivery Address" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/flatide"
+            style="@style/EditTextStyle"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+
+            android:hint="@string/Address"
+
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="#34495e" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/aptid"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+
+            android:hint="Apt(Optional)"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="#34495e" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/nameide"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="#34495e" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/zipide"
+
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+
+            android:hint="Zip code"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:textColor="#34495e" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/emailide"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="#34495e" />
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Save for the next order" />
+    <Button
+        android:id="@+id/savedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"
+        android:minWidth="150dp"
+        android:text="Save"
+        android:textAllCaps="true"
+
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dhanuka.morningparcel.activity.StoreProductsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtInStore"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:background="@color/Base_color"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:layout_weight="1"
+        android:layout_marginRight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="In Store"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/white"
+          />
+    <TextView
+        android:id="@+id/txtPending"
+        android:layout_marginLeft="1dp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:textStyle="bold"
+        android:background="@color/Base_color"
+        android:textSize="8pt"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Pending"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
+
+<!--
+    <com.google.android.material.tabs.TabLayout
+-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ebebeb"
+        app:tabGravity="fill"
+        app:tl_indicator_color="@color/colorAccent"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="1.5dp"
+        app:tl_textAllCaps="false"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@android:color/black"
+        app:tl_textUnselectColor="@android:color/black"
+        app:tl_textsize="18sp" />
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpProducts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/rv_category"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layoutAnimation="@anim/layout_animation"
+         android:nestedScrollingEnabled="true"
+         android:orientation="horizontal" />-->
+
+</LinearLayout>

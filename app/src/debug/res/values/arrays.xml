@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="s_q">
+        <item>What is Your Dream Job..?</item>
+        <item>What is Your Nick Name..?</item>
+        <item>Which is Your favourite City..?</item>
+
+    </string-array>
+
+
+    <string-array name="s_q_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+
+    </string-array>
+
+
+    <string-array name="by_minute">
+        <item>10 minutes</item>
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>40 minutes</item>
+        <item>50 minutes</item>
+        <item>1 hour</item>
+        <item>70 minutes</item>
+        <item>80 minutes</item>
+        <item>90 minutes</item>
+        <item>100 minutes</item>
+        <item>110 minutes</item>
+        <item>2 hour</item>
+        <item>130 minutes</item>
+        <item>140 minutes</item>
+        <item>150 minutes</item>
+        <item>160 minutes</item>
+        <item>170 minutes</item>
+        <item>3 hour</item>
+        <item>Above 3 hour</item>
+
+
+    </string-array>
+
+    <string-array name="by_minute_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+
+    </string-array>
+
+    <string-array name="year">
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+    </string-array>
+
+
+    <string-array name="month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="pickuphour">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="pickupminute">
+        <item>00</item>
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+
+    <string-array name="by_reason">
+        <item>Bcz i was sick</item>
+        <item>Bcz of traffic</item>
+        <item>Bcz of accident</item>
+
+    </string-array>
+
+    <string-array name="by_reason_id">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+
+
+    </string-array>
+
+
+    <string-array name="filter_type">
+         <item>All</item>
+        <item>On Time</item>
+        <item>No Status</item>
+        <item>Arrival Delay</item>
+        <item>Cancel Trips</item>
+        <item>Placement Delay</item>
+        <item>No GPS</item>
+    </string-array>
+
+
+</resources>

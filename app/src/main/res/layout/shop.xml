@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shopbtn"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:buttonTint="@color/colorAccent"
+            android:drawableTint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/shoptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingLeft="35dp"
+            android:textSize="14sp"
+            android:text="Vardhmaan Genral Store"
+            android:textColor="@color/black3"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

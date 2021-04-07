@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dhanuka.morningparcel">
+
+    <permission
+        android:name="com.dhanuka.morningparcel.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.dhanuka.morningparcel.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="com.dhanuka.morningparcel.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.dhanuka.morningparcel.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".ExampleApplication"
+        android:allowBackup="true"
+        android:configChanges="fontScale"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/playstoreicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/playstoreicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.TatReportActivity"></activity>
+        <activity android:name=".activity.CollectionDetailActivity" />
+        <activity android:name=".activity.CollectionReport" />
+        <activity android:name=".activity.MeetingReport" />
+        <activity android:name=".activity.DailyOrder" />
+        <activity android:name=".activity.CustomerSummary" />
+        <activity android:name=".activity.CustomerCollection" />
+        <activity android:name=".activity.BranchWiseStock" />
+        <activity android:name=".activity.RewardPoints" />
+        <activity android:name=".activity.RefernEarn" />
+        <activity
+            android:name=".activity.ClickOffer"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.HomeBilling"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activity.supplierorder.SearchActivityNew" />
+        <activity
+            android:name=".activity.StoreWiseStockActivityNew"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.ItemStockActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.StoreWiseCountActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.StoreWiseStockActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.BranchWiseACtivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.PurchaseOrderActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.CustomerSearchActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.ItemHistoryActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AccountHistory"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.Recurring_order"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.WalleTransactionActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.ItemOrdersActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.ItemSuppliersActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.SalesActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.NewOrderActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <service
+            android:name=".service.SendFCM"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".DataSave"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.retail.NewBillActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.retail.GRNDetail"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.retail.GRMMaster"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.retail.AddCustomerActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.GRReportActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.Notification_Bell"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.OtherProductsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.Changepassword"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.LoginWithOtpActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.LocationSelectionAcitivityNew"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.StartActivityNew"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.LoginActivityNew"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activity.CityActivity" />
+        <activity
+            android:name=".activity.SearchActivityNew"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.EnterContactActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.NewSignUp"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.ChangePass"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.OptionChooserActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".demo.DemoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.ChooseLocationActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddLatLong"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.Activity_MettingPage" />
+        <activity
+            android:name=".activity.GRSalesActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".restaurant.activity.AddLatLong"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.AddNewSociety"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.ShopMapView"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.EnquiryActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.OrderHistoryActvitylsp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.InvoiceUpload"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.HomeStoreActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PromotionSelector"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activity.supplierorder.SupplierSearchActivity" />
+        <activity android:name=".activity.supplierorder.SupplierOrderActivity" />
+        <activity android:name=".activity.supplierorder.SupplierHomeActivity" />
+        <activity android:name=".activity.supplierorder.CategoryActivity" />
+        <activity android:name=".activity.supplierorder.OrderSuccessActivity" />
+        <activity android:name=".activity.supplierorder.SupplierCartActivity" />
+        <activity
+            android:name=".activity.HomeStoreProductsActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ImagePickerActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.OrderHistoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.OrderSuccessActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PastOrderItem"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.Reach_Us"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.Showallimages"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StoreProductsActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.complaintreport"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ComplaintReason"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CreateCardPaymentMethodActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhotosScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BannerWebview"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.barcode.Bar"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.UpdateProfile"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service android:name=".service.UpdateInvoice" />
+        <service android:name=".activity.SetmarginService" />
+
+        <activity
+            android:name=".restaurant.activity.SavedAddress"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".paypal.MainActivity"
+            android:configChanges="orientation|screenSize">
+
+            <!--
+<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+ffirebas
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".paypal.CreateTransactionActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".paypal.PayPalActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/paypal" />
+
+        <service android:name=".utils.OrderUploadService" />
+        <service android:name=".utils.ImageUploadService" />
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA60PqhDKX4x4AJk26I_GBQ5qlI6NWUS6I" />
+    </application>
+
+</manifest>

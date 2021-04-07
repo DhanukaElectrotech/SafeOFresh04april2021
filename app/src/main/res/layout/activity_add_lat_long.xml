@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dhanuka.morningparcel.activity.AddLatLong">
+
+    <RelativeLayout
+        android:id="@+id/topL"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/backbtnicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:onClick="backClick"
+
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbtnicon"
+            android:padding="7dp"
+            android:text="Update Home Location"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:padding="7dp"
+            android:text="Update"
+            android:textColor="@color/white"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_day_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/rb_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:text="Get Location"
+                            android:textAppearance="?android:textAppearanceLarge" />
+
+                        <View
+                            android:id="@+id/v_rb_day_start"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"></View>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <fragment
+                            android:id="@+id/map"
+                            class="com.google.android.gms.maps.MapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp" />
+
+                        <View
+                            android:id="@+id/location_button"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="top|right"
+                            android:layout_margin="10dp"></View>
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-20dp"
+                            android:src="@mipmap/wo_pin" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="350dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="7dp"
+                            app:cardMaxElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:minHeight="44dp"
+                                android:orientation="horizontal">
+
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/mapframe"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:textSize="14dp">
+
+                                    <TextView
+                                        android:id="@+id/autoCompleteTextView1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="44dp"
+                                        android:gravity="center_vertical"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:text=" Search Near By place"></TextView>
+
+                                    <EditText
+                                        android:id="@+id/place_autocomplete_search_input1"
+                                        android:layout_width="250dp"
+                                        android:layout_height="44dp" />
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.2"></View>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+
+        android:background="@color/work_order_theme_color"
+        android:text="SUBMIT"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_photo_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/btn_camera" />
+
+            <TextView
+                android:id="@+id/tv_photo_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Take Photos"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#545454" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_sign"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/btn_sign" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Capture Sign"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#545454" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
